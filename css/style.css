@@ -24,7 +24,7 @@
   top: 120px;
     position:center;
     margin-top:0px;
-    margin-left:15px;
+    margin-left:40px;
     padding-left:10px;
     padding-right:10px;
 }
@@ -417,7 +417,7 @@ h4{
   position: relative;
   width: 100%;
   display: -webkit-flex;
-  overflow: hidden;
+  overflow: visible;
   display: flex;
   -webkit-justify-content: center;
   justify-content: center;
