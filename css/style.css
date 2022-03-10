@@ -29,6 +29,10 @@
     padding-right:10px;
 }
 
+.srini{
+    font-size:15px;
+    color:#000000;
+}
 #oc_button{
   line-height: 20px;
   position: relative;
@@ -44,7 +48,7 @@
    position: fixed;
    display: block;
    opacity: 1;
-   background-color: black;
+   background-color: #2B2181;
    z-index: 1111199;
    text-align: center;
 }
@@ -161,7 +165,7 @@ body{
 }
  #particles-js{
   height: 100vh;
-background:transparent;
+background:#116466;
  }
 .navbar-right{
   float: right;
@@ -230,9 +234,7 @@ section{
   width: 100px;
 }
 
-.er{
-  padding-bottom: 600px;
-  }
+
 
 @media(max-width: 746px){
   .glow{
@@ -430,7 +432,7 @@ h4{
   border-style: solid;
   border-image: 
     linear-gradient(
- #c0495c , #434a99
+ #232942 , #434a99
     ) 1 100%;
   border-radius: 3px;
   background-color: transparent;

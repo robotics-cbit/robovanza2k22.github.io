@@ -145,23 +145,54 @@
 								<div class="smalltext" style="font-family: batma; font-size: 12px">Seconds</div>
 							</div>
 						</div> -->
-						<h1 class="glow" style="font-size: 26px;margin-top: 70px; padding-bottom: 0px;"> The Event Has Begun</h1>
+						<h1 class="glow" style="font-size: 26px;margin-top: 70px; padding-bottom: 0px;"> The Count-Down has Started</h1>
+						<h1 id="demo"class="glow" style="font-size: 26px;margin-top: 20px; padding-bottom: 0px;" ></h1>
+												<script>
+						// Set the date we're counting down to
+						var countDownDate = new Date("Mar 23, 2022 00:00:00").getTime();
+
+						// Update the count down every 1 second
+						var x = setInterval(function() {
+
+						  // Get today's date and time
+						  var now = new Date().getTime();
+
+						  // Find the distance between now and the count down date
+						  var distance = countDownDate - now;
+
+						  // Time calculations for days, hours, minutes and seconds
+						  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+						  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+						  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+						  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+						  // Output the result in an element with id="demo"
+						  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+						  + minutes + "m " + seconds + "s ";
+
+						  // If the count down is over, write some text
+						  if (distance < 0) {
+							clearInterval(x);
+							document.getElementById("demo").innerHTML = "EXPIRED";
+						  }
+						}, 1000);
+						</script>
 						<hr class="h1-underline">
 						<h1 class="glow" style="font-size: 26px;margin-top: 70px; padding-bottom: 0px;"> 23rd and 24th of
 							March, 2022</h1>
 						<hr class="h1-underline">
 
 
-						<a class="hero-unit-btn" href="https://forms.gle/PKAZM6djWndxegEt9"
-							id="register_button">COMBO PACK Registration</a>
+						<a class="hero-unit-btn" href="https://linktr.ee/robotics_cbit"
+							id="register_button" style="font-size:20px">Click here to Register</a>
 						<br>
 						<br>
 
 
 
 					</center>
-					<div id="scroll" style="font-size:19px;font-family: batma;text-align: center" >
-						Early bid combo offer.<span style="text-decoration: line-through; color:white"></span>
+					<div id="scroll" style="font-size:19px;font-family: batma;text-align: center; margin-left:40px;" >
+						Early bird combo offer.<span style="text-decoration: line-through; color:white"></span>
 					</div>
 
 				</div>
@@ -198,7 +229,7 @@
 
 		<h1 class="glow" id="events1" style="color: #131313;">Events</h1>
 		<hr class="h1-underline">
-		<center>r>
+		<center>
 			<p style="color: white">Below are the events in Robovanza. Double click on the event to know more. <br>
 				Tickets are now available. Click on the register button below to get registered.<br>
 			</p>
@@ -212,7 +243,7 @@
 					<div style="" class="service-item"><img style="height:60px;padding=0" id="svg1" src="images/rcgrand.png" alt="battlefield">
 						<br><br>
 
-						<h5 class="alt-font">GRAND PRIX RC <br><br> Beat the deadline, to be the champion. <br></h5>
+						<h5 class="alt-font">GRAND PRIX RC <br><br> Beat the deadline, to be the champion. <br><br><span class="srini" >(Double Tap to know more!)</span></h5>
 
 						<div class="service-desc">
 							<p> The way you enter,proceed and reveal your speed to
@@ -222,9 +253,8 @@
 						</div>
 
 					</div>
-					<div><a style="color:white;padding:10px:left-margin:50px;font-size:11px;" class="hero-unit-btn"
-							href="https://forms.gle/8jmCxDoFfdtZLz618" id="register_button">Register for GRAND PRIX RC</a></div>
-				</div>
+					</div>
+
 			</a>
 
 			<a href="pdf/ROBOROVOR.pdf">
@@ -232,14 +262,12 @@
 					<div class="service-item"><img id="svg1" src="images/robot_wheels.svg" alt="robot_wheels">
 						<br><br>
 						<h5 class="alt-font">ROBO ROVER<br> <br>Lead your robot where no robot has ever gone
-							before.<br></h5>
+							before.<br><br><span class="srini" >(Double Tap to know more!)</span></h5>
 						<div class="service-desc">
 							<p> All terrain.... build a bot and name it the king of land as it is going to conquer all types of land with ease. Control your mini rover to cruise through the track in best time</p>
 
 						</div>
 					</div>
-					<div><a style="color:white;padding:10px:left-margin:50px;font-size:12px;" class="hero-unit-btn"
-							href="https://forms.gle/4bVfdsL1cqBHTSYD7" id="register_button">Register for ROBO ROVER</a></div>
 
 				</div>
 			</a>
@@ -248,13 +276,12 @@
 				<div class="card-primary ">
 					<div class="service-item"><img id="svg1" src="images/knot.svg" alt="tug of war">
 						<br><br>
-						<h5 class="alt-font">TOW IT AWAY<br><br>For the strongest of the strong. <br></h5>
+						<h5 class="alt-font">TOW IT AWAY<br><br>For the strongest of the strong. <br><br><span class="srini" >(Double Tap to know more!)</span></h5>
 						<div class="service-desc">
 							<p>Tug of war... Game sounds familiar but here your bots needs to flex their grip and torque. Not just the game of strength but also strategy, use the physics to pull your opponent out of tournament</p>
 						</div>
 					</div>
-					<div><a style="color:white;padding:10px:left-margin:50px;font-size:12px;" class="hero-unit-btn"
-							href="https://forms.gle/RinqWUiYKhDto4Cx9" id="register_button">Register for TOW IT AWAY</a></div>
+
 				</div>
 			</a>
 
@@ -262,7 +289,7 @@
 				<div class="card-primary">
 					<div class="service-item"><img id="svg1" src="images/football.svg" alt="football">
 						<br><br>
-						<h5 class="alt-font">ROBO SOCCER<br><br>Set your goals at the goal post.<br></h5>
+						<h5 class="alt-font">ROBO SOCCER<br><br>Set your goals at the goal post.<br><br><span class="srini" >(Double Tap to know more!)</span></h5>
 						<div class="service-desc">
 							<p>
 								All you soccer fans hold your breath, as we present to you soccer with an entirely new dimension with ROBO SOCCER.
@@ -270,8 +297,7 @@
 								!
 						</div>
 					</div>
-					<div><a style="color:white;padding:10px:left-margin:50px;font-size:12px;" class="hero-unit-btn"
-							href="https://forms.gle/xdJ87HjpE6jy2JkcA" id="register_button">Register for ROBO SOCCER</a></div>
+
 
 				</div>
 			</a>
@@ -281,14 +307,13 @@
 				<div class="card-primary">
 					<div class="service-item"><img id="svg1" src="images/line.svg" alt="line">
 						<br><br>
-						<h5 class="alt-font">LINE FOLLOWER <br><br>Finish the line to shine.<br></h5>
+						<h5 class="alt-font">LINE FOLLOWER <br><br>Finish the line to shine.<br><br><span class="srini" >(Double Tap to know more!)</span></h5>
 						<div class="service-desc">
 							<p> Line follower....tracking the line is easy but it's gets tricky when junctions confuse the bots to take a wrong route. So tell your bot to follow the best line to complete the path in fastest time!</p>
 
 						</div>
 					</div>
-					<div><a style="color:white;padding:10px:left-margin:50px;font-size:11px;" class="hero-unit-btn"
-							href="https://forms.gle/n1Qxn6roZFW3ZYa39" id="register_button">Register for LINE FOLLOWER</a></div>
+
 				</div>
 			</a>
 
@@ -297,14 +322,13 @@
 					
 					<div class="service-item"><img id="svg1" src="images/maze.svg" alt="cube">
 						<br><br>
-						<h5 class="alt-font">MAZE SOLVER<br> <br>Solve the maze.</h5>
+						<h5 class="alt-font">MAZE SOLVER<br> <br>Solve the maze.<br><span class="srini" >(Double Tap to know more!)</span></h5>
 						<div class="service-desc">
 							<p> RoboMaze is a network of paths and hedges designed as a puzzle through which one has to find a way with their bot. The competition demand patience, ability to understand the surroundings & critical thinking skills!</p>
 
 						</div>
 					</div>
-					<div><a style="color:white;padding:10px:left-margin:50px;font-size:12px;font-size:12px;" class="hero-unit-btn"
-							href="https://forms.gle/Yax83A7TqF8ignVe8" id="register_button">Register for MAZE SOLVER</a></div>
+
 				</div>
 			</a>
 
@@ -313,14 +337,13 @@
 
 					<div class="service-item"><img id="svg1" src="images/drone.png" alt="cube">
 						<br><br>
-						<h5 class="alt-font">DRONE RACING<br> <br>Float like a Cadillac, sting like a Beemer.</h5>
+						<h5 class="alt-font">DRONE RACING<br> <br>Float like a Cadillac, sting like a Beemer.<br><span class="srini" >(Double Tap to know more!)</span></h5>
 						<div class="service-desc">
 							<p> Drone racing....the word drone reminds the sound of bee "buzz" , push the throttle stick all the way up and pitch forward into the competition to put yourself in the fastest lap possible around the track.</p>
 
 						</div>
 					</div>
-					<div><a style="color:white;padding:10px:left-margin:50px;padding-bottom:20px;font-size:12px;" class="hero-unit-btn"
-							href="https://forms.gle/3xQcQWi7SNPXDWcQA" id="register_button">Register for DRONE RACING</a></div>
+
 				</div>
 			</a>
 
@@ -383,7 +406,7 @@
 						<div class="team-card">
 							<img class="team-image" src="images/sriram3.jpeg" alt="fb">
 							<div class="team-name">
-								<h4>P.Sri Ram</h4> President
+								<h4>P.Sri Ram</h4> Organizing Head
 								<p><i class="fa fa-phone" aria-hidden="true"></i>7093032750</p>
 							</div>
 						</div>
@@ -419,7 +442,7 @@
 
 
 
-8885096667
+
 		</div>
 
 	</section>
@@ -524,12 +547,14 @@
 								<td>Annanya</td>
 								<td>Vivek</td>
 
+
 							</tr>
 							<tr>
 								<td>Akshitha</td>
 								<td>Vennela</td>
 								<td></td>
 								<td>Mustafa ahmed</td>
+								<td></td>
 								<td></td>
 								<td></td>
 
@@ -590,13 +615,11 @@
 								title="https://www.hitwebcounter.com/" Alt="https://www.hitwebcounter.com/" border="0">
 						</a>
 						<br />
-						<!-- hitwebcounter.com --><a href="https://www.hitwebcounter.com" title="" target="_blank"></a>
+
 
 
 					</div>
-					<!-- <p><i class="fa fa-youtube-play"></i> Youtube</p>
-				<p><i class="fa fa-linkedin"></i> LinkedIn</p>
-				<p><i class="fa fa-twitter"></i> Twitter</p> -->
+
 				</div>
 
 			</div>
