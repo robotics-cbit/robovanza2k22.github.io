@@ -25,7 +25,7 @@ html *
 #register_button{
   line-height: 20px;
 
-  top: 120px;
+  top: 174px;
     position:center;
     margin-top:0px;
     margin-left:40px;
@@ -402,7 +402,7 @@ padding-bottom:00px;
   #register_button{
     line-height: 20px;
     position: relative;
-    top: 120px;
+    top: 1px;
     font-size: 13px;
   }
 
