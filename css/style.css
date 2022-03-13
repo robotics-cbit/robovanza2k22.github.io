@@ -196,13 +196,13 @@ section{
   text-align: center;
 }
 .team-des{
-  font-family: 'Open Sans', sans-serif;
+
   font-size: 16px;
   font-weight: 400;
   color: #525252;
 }
 .list-des{
-  font-family: 'Open Sans', sans-serif;
+
   font-size: 18px;
 }
 .h1-heads{
@@ -323,7 +323,7 @@ section{
 
 }
 .hero-unit-primary-text2{
-  font-family: Apple Chancery, cursive;
+
   font-size: 25px;
   font-weight: 700;
   line-height: 1;
