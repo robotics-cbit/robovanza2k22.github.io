@@ -136,7 +136,7 @@
 								<div class="smalltext" style="font-family: batma; font-size: 12px">Seconds</div>
 							</div>
 						</div> -->
-						<h1 class="glow" style="font-size: 26px;margin-top: 70px; padding-bottom: 0px;"> The Count-Down has Started</h1>
+						<h1 class="glow" style="font-size: 26px;margin-top: 70px; padding-bottom: 0px;"> Event Ended!</h1>
 						<h1 id="demo"class="glow" style="font-size: 26px;margin-top: 20px; padding-bottom: 0px;" ></h1>
 												<script>
 						// Set the date we're counting down to
@@ -164,7 +164,7 @@
 						  // If the count down is over, write some text
 						  if (distance < 0) {
 							clearInterval(x);
-							document.getElementById("demo").innerHTML = "EXPIRED";
+							document.getElementById("demo").innerHTML = "";
 						  }
 						}, 1000);
 						</script>
